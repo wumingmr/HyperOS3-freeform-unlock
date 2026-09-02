@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.wumingmr.freeformunlock"
+    android:versionCode="1"
+    android:versionName="1.0">
+
+    <application
+        android:label="Freeform Unlock"
+        android:allowBackup="false">
+
+        <provider
+            android:name="io.github.libxposed.service.XposedProvider"
+            android:authorities="com.wumingmr.freeformunlock.XposedService"
+            android:exported="true" />
+    </application>
+</manifest>
