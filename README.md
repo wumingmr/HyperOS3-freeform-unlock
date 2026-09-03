@@ -1,4 +1,4 @@
-# HypetOS3-freeform-unlock
+# HyperOS3-freeform-unlock
 
 LSPosed 模块，解除自由窗口（小窗）数量限制(本模块限制20)，仅在os3系统上测试过。
 
