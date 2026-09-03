@@ -26,7 +26,7 @@ Hook `com.android.server.wm.MiuiFreeFormStackDisplayStrategy#getMaxMiuiFreeFormS
 
 ## 安装
 
-1. 下载 `freeform-unlock.apk`
+1. 从 [Releases](https://github.com/wumingmr/HyperOS3-freeform-unlock/releases) 下载最新版 `freeform-unlock.apk`
 2. 安装 APK（`pm install -r freeform-unlock.apk`）
 3. 打开 LSPosed Manager → 模块 → **Freeform Unlock** → 启用
 4. 作用域已锁定为「系统框架」（`staticScope=true`），无需手动勾选
