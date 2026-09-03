@@ -1,20 +1,11 @@
 # HypetOS3-freeform-unlock
 
-LSPosed 模块，突破 MIUI / HyperOS 自由窗口（小窗）数量限制。
+LSPosed 模块，解除自由窗口（小窗）数量限制(本模块限制20)。
 
-## 效果
-
-| 状态 | 小窗上限 |
-| --- | --- |
-| 出厂默认 | 2（第 3 个自动挤掉最旧的） |
-| 桌面模式 | 4 |
-| ✅ 本模块生效后 | **20**（不依赖桌面模式，不触发桌面 UI 变化） |
 
 ## 原理
 
 Hook `com.android.server.wm.MiuiFreeFormStackDisplayStrategy#getMaxMiuiFreeFormStackCount`，该方法返回系统允许同时存在的 freeform 小窗数量上限。
-
-模块使用 **libxposed 现代 API**（`XposedModule`），作用域锁定 `system`（system_server），通过 `META-INF/xposed/scope.list` 声明。
 
 ## 依赖
 
@@ -66,7 +57,3 @@ apksigner sign --ks <keystore> --out module-signed.apk module-aligned.apk
 ## 卸载
 
 LSPosed Manager 取消勾选 → 卸载 APK → 软重启。无系统残留。
-
-## License
-
-MIT
